@@ -127,12 +127,12 @@
 		A1C67ACE2263679700BCD9FD /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				A1C67ACF2263679700BCD9FD /* WXLHomeThreeTableViewCell.m */,
 				A1C67AD02263679700BCD9FD /* WXLHomeOneTableViewCell.h */,
-				A1C67AD12263679700BCD9FD /* WXLHomeTwoTableViewCell.m */,
 				A1C67AD22263679700BCD9FD /* WXLHomeOneTableViewCell.m */,
 				A1C67AD32263679700BCD9FD /* WXLHomeThreeTableViewCell.h */,
+				A1C67ACF2263679700BCD9FD /* WXLHomeThreeTableViewCell.m */,
 				A1C67AD42263679700BCD9FD /* WXLHomeTwoTableViewCell.h */,
+				A1C67AD12263679700BCD9FD /* WXLHomeTwoTableViewCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
