@@ -11,7 +11,7 @@
 
 **原理**：在这样的列表里一般一个`model`就对应一个`cell`，我的思想就是让这个model继承一个协议，协议里实现显示这个`cell`的一些方法，然后在`Tableview`代理里用协议调用相应的方法就行，具体实现如下：
 
-######1、定义协议接口
+1、定义协议接口
 ```
 @protocol WXLPublicCellConfigProtocol <NSObject>
 @optional
@@ -38,7 +38,7 @@ cell 点击
 - (void)cellDidSelectRowAtIndexPath:(NSIndexPath *)indexPath other:(_Nullable id)other;
 @end
 ```
-######2、model实现协议
+2、model实现协议
 `.h`
 ```
 @interface WXLHomePublicModel : NSObject <WXLPublicCellConfigProtocol>
@@ -77,7 +77,7 @@ cell 点击
 NSLog(@"%@ 点击 %ld",NSStringFromClass([self class]),indexPath.row);
 }
 ```
-######5、cell开放赋值接口
+5、cell开放赋值接口
 `.h`
 ```
 /**
@@ -95,7 +95,7 @@ self.textLabel.text = model.name;
 self.textLabel.textColor = model.backColor;
 }
 ```
-######4、TableView代理里数据返回
+4、TableView代理里数据返回
 ```
 #pragma mark ---- UITableViewDelegate ----
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
